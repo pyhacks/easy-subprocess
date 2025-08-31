@@ -2,6 +2,9 @@
 easy-subprocess is a higher-level alternative to [subprocess.Popen](https://docs.python.org/3/library/subprocess.html#subprocess.Popen) with the same level of flexibility. 
 Also, easy-subprocess supports both blocking and non-blocking read operations.
 
+# Installation
+```pip install easy-subprocess```
+
 # Api Reference
 _class_ easy_subprocess.**EasyPopen**(target, text_mode = True, encoding = "utf-8", print_output = False, propagate_children = True, initial_output = False, buffer_newlines = True, no_encoding_errors = True, **kwargs)
 
