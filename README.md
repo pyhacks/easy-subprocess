@@ -130,8 +130,8 @@ If no data arrives in _interval_ seconds, return all of the collected data.
 
 EasyPopen.**keep_try_reading_until**(seperator = "\n", interval = 0.5)
 
-Call EasyPopen.try_reading_until() once every _interval_ seconds if some new data became available meanwhile and seperator is not found yet. Concatenate the data returned from each call. 
-If no data arrives in _interval_ seconds or seperator is found, return all of the collected data.
+Call EasyPopen.try_reading_until() once every _interval_ seconds if some new data became available meanwhile and _seperator_ is not found yet. Concatenate the data returned from each call. 
+If no data arrives in _interval_ seconds or _seperator_ is found, return all of the collected data.
 
 EasyPopen.**send_signal**(signal)
 
