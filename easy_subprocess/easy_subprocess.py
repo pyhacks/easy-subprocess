@@ -418,9 +418,13 @@ class NonBlockingReader(threading.Thread):
     def keep_try_reading_until(self, seperator = "\n", interval = 0.5):
         """Call try_reading_until() once every "interval" seconds if some new data became available meanwhile.
         Return if no data arrives in "interval" seconds."""
-        data = self.try_reading_until(seperator = seperator) 
+        data = self.try_reading_until(seperator = seperator)
+        if seperator in data:
+            return data
         while self.wait_unread_data(interval):
             data = data + self.try_reading_until(seperator = seperator)
+            if seperator in data:
+                return data
         return data
         
                                 
