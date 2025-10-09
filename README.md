@@ -43,7 +43,7 @@ _initial_output_ is a boolean specifying whether or not to wait for the process 
 You can pass False to this, but waiting initially makes us sure the process is ready for interaction.
 Nevertheless, not every program shows an initial output. That's why it's set to False by default.
 
-_no_encoding_errors_ is a boolean specifying whether or not to suppress encoding errors by replacing the faulty bytes with "�"
+_no_encoding_errors_ is a boolean specifying whether or not to suppress encoding errors by replacing the faulty bytes with "�".
 Has no effect when text_mode = False.
 
 **_kwargs_ will be passed to subprocess.Popen()
